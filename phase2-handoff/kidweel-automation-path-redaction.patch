@@ -1,0 +1,29 @@
+From e325280cec09e2f5015689d4c4d5d6e023c929bc Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Mon, 6 Jul 2026 21:40:37 +0000
+Subject: [PATCH] Redact local pathname examples in alpaca-mcp-server README
+
+Phase 2 QA: replace /Users/username and C:\Users\username examples
+with ~/Documents and %USERPROFILE% placeholders.
+---
+ alpaca-mcp-server/README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/alpaca-mcp-server/README.md b/alpaca-mcp-server/README.md
+index f52ad20..8fda574 100644
+--- a/alpaca-mcp-server/README.md
++++ b/alpaca-mcp-server/README.md
+@@ -853,8 +853,8 @@ The official VS Code setup document is available here: https://code.visualstudio
+     ```
+ 
+     **Note:** Replace `${workspaceFolder}` with your actual project path. For example:
+-      - Linux/macOS: `/Users/username/Documents/alpaca-mcp-server`
+-      - Windows: `C:\\Users\\username\\Documents\\alpaca-mcp-server`
++      - Linux/macOS: `~/Documents/alpaca-mcp-server`
++      - Windows: `%USERPROFILE%\\Documents\\alpaca-mcp-server`
+     
+ 
+ **For user-wide settings:**
+-- 
+2.43.0
+

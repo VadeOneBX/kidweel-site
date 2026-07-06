@@ -1,0 +1,40 @@
+From c77a495dfcdb45764bd2aa5af9df8a34588c768f Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Mon, 6 Jul 2026 21:40:37 +0000
+Subject: [PATCH] Add 30-second public posture block and splash back-link
+
+Phase 2 QA: compact doctrine summary at top of README covering live
+paper-trading validation, no live capital authority, defined-risk,
+deterministic gates, evidence trails, operator review, and explicit
+negations. Links back to public splash page.
+---
+ README.md | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+diff --git a/README.md b/README.md
+index e154a20..de86bd1 100644
+--- a/README.md
++++ b/README.md
+@@ -6,6 +6,19 @@ Advisory proposes; the system decides; operator/HITL controls transport.
+ 
+ **Trinity (portable narrative):** (1) **Deterministic decision system** — context, spread construction, EV/RR/PMP gates, and audit artifacts; (2) **Paper-only execution guardrails** — dry-run default, explicit opt-in submit, no live endpoint; (3) **Portable evidence narrative** — replay candidates, gate outcomes, and transport status where applicable, readable on GitHub, in interviews, and in portfolio copy. Built to **reject weak decisions, not force trades**; **`SKIP` / do nothing is a first-class output**.
+ 
++## Public posture (30 seconds)
++
++- **Live paper-trading validation** — Alpaca paper transport only; dry-run default; explicit operator opt-in (`--submit-paper`) to submit.
++- **No live capital authority** — live endpoints forbidden; no production trading path.
++- **Defined-risk** — multileg spread candidates through deterministic spread economics and guardrails.
++- **Deterministic gates** — EV/RR/PMP and policy gates decide continue, reject, or SKIP.
++- **Evidence trails** — manifests, risk audits, transport records, and rejection reasons are first-class outputs.
++- **Operator review** — advisory layers flag; gates approve; submit requires explicit flags and credentials.
++
++**Not** a signal service, trading advice, AI trading bot, or autonomous trading system.
++
++**Public splash:** https://vadeonebx.github.io/kidweel-site/
++
+ ---
+ 
+ ## 1. Project Thesis
+-- 
+2.43.0
+
