@@ -114,9 +114,9 @@ Severity: **block** stops acceptance · **warn** needs operator decision · **no
 | Repo | Branch | Files touched | Scan status | PR / blocker | Operator action |
 |------|--------|---------------|-------------|--------------|-----------------|
 | `kidweel-site` | `cursor/public-qa-hygiene-dcd1` | `QA-FINDINGS.md`, `README.md` | Path scan pass (meta refs in findings only) | https://github.com/VadeOneBX/kidweel-site/pull/1 | Merge PR #1 |
-| `kidweel-capstone` | `cursor/public-qa-hygiene-dcd1` | `README.md` | Path scan pass | **403 push blocked** — grant Cursor write access | Push branch + open PR |
-| `orb-gamma-confluence` | `cursor/public-qa-hygiene-dcd1` | `pinescript/GEX_Hostage_Dashboard.pine.txt` | Path scan pass | **403 push blocked** | Push branch + open PR |
-| `Kidweel-Automation` | `cursor/public-qa-hygiene-dcd1` | `alpaca-mcp-server/README.md` | Path scan pass (post-redaction) | **403 push blocked** | Push branch + open PR |
+| `kidweel-capstone` | `cursor/public-qa-hygiene-dcd1` | `README.md` | Path scan pass | **403 push blocked** — patches in [`phase2-handoff/`](/workspace/phase2-handoff/) | Apply handoff patch + open PR |
+| `orb-gamma-confluence` | `cursor/public-qa-hygiene-dcd1` | `pinescript/GEX_Hostage_Dashboard.pine.txt` | Path scan pass | **403 push blocked** — patches in [`phase2-handoff/`](/workspace/phase2-handoff/) | Apply handoff patch + open PR |
+| `Kidweel-Automation` | `cursor/public-qa-hygiene-dcd1` | `alpaca-mcp-server/README.md` | Path scan pass (post-redaction) | **403 push blocked** — patches in [`phase2-handoff/`](/workspace/phase2-handoff/) | Apply handoff patch + open PR |
 | TradingView | — | — | Read-only pass | N/A | No republish required |
 
 **Local commits ready to push (403):**

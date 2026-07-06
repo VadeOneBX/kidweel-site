@@ -1,0 +1,29 @@
+From d62fc0efc83e58ffaccf1499c0966f0834294fd3 Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Mon, 6 Jul 2026 21:40:37 +0000
+Subject: [PATCH] Add doctrine comment header to Pine archive
+
+Phase 2 QA: comment-only header clarifying visual validation artifact
+posture. No trading logic, calculations, plots, or alerts changed.
+---
+ pinescript/GEX_Hostage_Dashboard.pine.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/pinescript/GEX_Hostage_Dashboard.pine.txt b/pinescript/GEX_Hostage_Dashboard.pine.txt
+index d4dbd28..d523660 100644
+--- a/pinescript/GEX_Hostage_Dashboard.pine.txt
++++ b/pinescript/GEX_Hostage_Dashboard.pine.txt
+@@ -1,5 +1,10 @@
+ // This Pine Script® code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+ // © VadeOne1
++//
++// Kidweel visual validation artifact — opening-range structure, gamma exposure context,
++// and market-positioning review. Manual validation and operator judgment only.
++// Not a signal service, trading advice, or automated entry system.
++// Access is invite-only: early Kidweel visual validation artifact, not a public trading tool.
+ 
+ //@version=6
+ indicator("ORB GEX Hostage Dashboard v7.4", overlay=true, max_labels_count=500)
+-- 
+2.43.0
+
